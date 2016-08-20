@@ -1,7 +1,7 @@
 {
     "name": "collectd-nginx",
     "types": ["pack"],
-    "version": "0.1.0",
+    "version": "0.2.0",
     "homepage": "https://github.com/Temelio/shinken-pack-collectd-nginx",
     "author": "Alexandre Chaussier",
     "description": "Collectd nginx monitoring checks, using collectd-nagios plugin",
