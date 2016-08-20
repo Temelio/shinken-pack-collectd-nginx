@@ -1,0 +1,23 @@
+{
+    "name": "collectd-nginx",
+    "description": "Checks to manage our nginx collectd checks",
+    "path": "collectd-nginx",
+    "macros": {
+        "_COLLECTD_NGINX_CONNECTIONS_WAITING_WARN": {
+            "type": "integer",
+            "description": "Warning threshold for Nginx waiting connections"
+        },
+        "_COLLECTD_NGINX_CONNECTIONS_WAITING_CRIT": {
+            "type": "integer",
+            "description": "Critical threshold for Nginx waiting connections"
+        },
+        "_COLLECTD_NGINX_REQUESTS_WARN": {
+            "type": "integer",
+            "description": "Warning threshold for Nginx requests value"
+        },
+        "_COLLECTD_NGINX_REQUESTS_CRIT": {
+            "type": "integer",
+            "description": "Critical threshold for Nginx requests value"
+        }
+    }
+}
