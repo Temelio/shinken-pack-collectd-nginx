@@ -20,11 +20,11 @@ This pack depends to shinken-pack-collectd-base to work
 
 ### Services
 
-| Service name                | Description                       | Value specification         | DS        | Consolidation | Warning variable                           | Critical variable                          | Duplicate_foreach variable |
-|-----------------------------|-----------------------------------|-----------------------------|-----------|---------------|--------------------------------------------|--------------------------------------------|----------------------------|
-| Nginx - waiting connections | Check current waiting connections | nginx/connections-waiting   | value     | none          | $_COLLECTD_NGINX_CONNECTIONS_WAITING_WARN$ | $_COLLECTD_NGINX_CONNECTIONS_WAITING_CRIT$ | N/A                        |
-| Nginx - requests            | Check current requests            | nginx/nginx_requests        | value     | none          | $_COLLECTD_NGINX_REQUESTS_WARN$            | $_COLLECTD_NGINX_REQUESTS_CRIT$            | N/A                        |
-| $KEY processes              | Check Nginx processes             | processes-$VALUE1$/ps_count | processes | None          | $VALUE2$                                   | $VALUE3$                                   | _nginx_processes           |
+| Service name                | Description                       | Value specification             | DS        | Consolidation | Warning variable                           | Critical variable                          | Duplicate_foreach variable |
+|-----------------------------|-----------------------------------|---------------------------------|-----------|---------------|--------------------------------------------|--------------------------------------------|----------------------------|
+| Nginx - waiting connections | Check current waiting connections | nginx/nginx_connections-waiting | value     | none          | $_COLLECTD_NGINX_CONNECTIONS_WAITING_WARN$ | $_COLLECTD_NGINX_CONNECTIONS_WAITING_CRIT$ | N/A                        |
+| Nginx - requests            | Check current requests            | nginx/nginx_requests            | value     | none          | $_COLLECTD_NGINX_REQUESTS_WARN$            | $_COLLECTD_NGINX_REQUESTS_CRIT$            | N/A                        |
+| $KEY processes              | Check Nginx processes             | processes-$VALUE1$/ps_count     | processes | None          | $VALUE2$                                   | $VALUE3$                                   | _nginx_processes           |
 
 ## Default values
 
